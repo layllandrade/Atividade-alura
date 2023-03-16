@@ -46,6 +46,7 @@ botaoAdicionar.addEventListener("click", function(event) {
     var peso = form.peso.value;
     var altura = form.altura.value;
     var gordura = form.gordura.value;
+    var imc = form.imc.value;
 
     var pacienteTr = document.createElement("tr");
     
@@ -54,5 +55,11 @@ botaoAdicionar.addEventListener("click", function(event) {
     var alturaTd = document.createElement("td");
     var gorduraTd = document.createElement("td");
     var imcTd = document.createElement("td");
+
+    nomeTd.textContent = nome;
+    pesoTd.textContent = peso;
+    alturaTd.textContent = altura;
+    gorduraTd.textContent = gordura;
+    imcTd.textContent= imc;
 
 });

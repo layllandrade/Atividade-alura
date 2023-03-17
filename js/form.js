@@ -17,6 +17,9 @@ botaoAdicionar.addEventListener("click", function(event) {
     var tabela = document.querySelector("#tabela-pacientes");
 
     tabela.appendChild(pacienteTr);
+    
+    // Adicionando reset pra limpar o formulario apos o click
+    form.reset();
 
 });
 
